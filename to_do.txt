@@ -29,10 +29,13 @@ features:
 So depending on these features, this is what I have in mind:
 - If you look at google notes website, that how the navigation should look like
 - then there is an aside for Archived tasks, completed tasks, and uncompleted,
-  and trash, and ofc the notes
+  and trash, and ofc the notes or tasks
 - the body should let the user to prompt for a task title, description,
   and due date
 - then after the user adds a new task it should look like the youtube video 
   but it will only show the title on the left then edit and delete on the right
   then if the user clicks on the task, it will expand so the user can see the 
   the description and the due date.
+
+
+I  will orgnaize the working file dirctory, have a look at it 
