@@ -1,10 +1,38 @@
 A to do list
 
+Resouces:
+https://keep.google.com/#home
+https://youtu.be/MkESyVB4oUw
+
+
 Front end:
 
 
 Back end:
 
 
+Requirements:
+- Camel case
 
-Camel case
+
+features:
+- Add a new task: Allow users to add a new task to their to-do list,
+  with a name, description, and due date.
+- Mark tasks as complete: Allow users to mark tasks as complete
+  and see them in a separate section of the app.
+- Archive tasks.
+- Delete tasks.
+- Edit tasks.
+- Search for tasks.
+- User authentication.
+
+So depending on these features, this is what I have in mind:
+- If you look at google notes website, that how the navigation should look like
+- then there is an aside for Archived tasks, completed tasks, and uncompleted,
+  and trash, and ofc the notes
+- the body should let the user to prompt for a task title, description,
+  and due date
+- then after the user adds a new task it should look like the youtube video 
+  but it will only show the title on the left then edit and delete on the right
+  then if the user clicks on the task, it will expand so the user can see the 
+  the description and the due date.
