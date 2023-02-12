@@ -30,74 +30,45 @@
     echo 'No post request sendt';
   }?>
 
-
-    <style>
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
-
-      form {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-      }
-
-      form h1 {
-        text-align: center;
-        margin-bottom: 1rem;
-      }
-
-      form input[type="text"],
-      form input[type="password"] {
-        margin-bottom: 1rem;
-        padding: 0.5rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 1rem;
-        width: 100%;
-      }
-
-      form input[type="submit"] {
-        padding: 0.5rem;
-        border: none;
-        border-radius: 4px;
-        font-size: 1rem;
-        background-color: #4285f4;
-        color: #fff;
-        cursor: pointer;
-        transition: all 0.2s;
-      }
-
-      form input[type="submit"]:hover {
-        background-color: #357ae8;
-      }
-    </style>
-  </head>
-
 <?php include 'includes/head.php'; ?>
 
+<body>
+  
 <?php include 'includes/nav.php'; ?>
-  <body>
-    <div class="container">
-      <form action="login.php" method="POST">
-        <h1>Login to your account</h1>
-        <input type="text" name="email" placeholder="Email" >
-        <input type="password" name="password" placeholder="Password" >
-        <button type="submit" name="logIn">Log in </button>
-      </form>
 
-      <a href="signUp.php">Sign up for a new account</a>
 
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+        <div class="card" style="width: 25rem;">
+      <div class="card-body">
+            <!-- Form -->
+            <form class="form-example" action="" method="post">
+                <h1>Log in</h1>
+                
+                <!-- Input fields -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="form-control username" id="username" placeholder="Username..." name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input name="password" type="password" class="form-control password" id="password" placeholder="Password..." name="password">
+                </div>
+
+                <button type="submit" name="logIn" class="btn btn-primary btn-customized">Login</button>
+                <a class="link active" href="signUp.php"><button class="btn btn-primary btn-customized"> Sign up</button></a>
+
+                
+            </form>
+      </div>
+        </div>
+        </div>
     </div>
-  </body>
+</div>
+
+
+</body>
   <?php include 'includes/footer.php'; ?>
 </html>
 
