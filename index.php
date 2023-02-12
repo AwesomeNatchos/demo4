@@ -1,3 +1,7 @@
+
+<?php
+include 'includes/cssjsInit.html';
+?>
 <?php
 include 'includes/head.php';
 ?>
