@@ -2,8 +2,15 @@
 include 'includes/head.php';
 ?>
 
+<?php
+if(isset($_POST['addTask'])){
+  $title = $_POST['title'];
+  $dueDate = $_POST['dueDate'];
+  $description = $_POST['description'];
+  $addTask = $_POST['addTask'];
 
-
+}
+?>
 
 <?php
 include 'includes/nav.php';
@@ -25,17 +32,17 @@ include 'includes/nav.php';
 
   <div style="width: 75%;">
     <h2>Add Task</h2>
-    <form>
+    <form action="index.php" mehtod="post">
       <label for="title">Title:</label>
       <input type="text" id="title" name="title" required><br>
 
       <label for="due-date">Due Date:</label>
-      <input type="date" id="due-date" name="due-date" required><br>
+      <input type="date" id="dueDate" name="dueDate" required><br>
 
       <label for="description">Description:</label><br>
       <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
 
-      <input type="submit" value="Add Task">
+      <button type="sumbit" name="addTask">Add task</button>
     </form>
 
     <h2>All Tasks</h2>
