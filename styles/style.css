@@ -1,0 +1,95 @@
+
+  html{
+    font-size: 100%;
+    overflow-x: hidden;
+  }
+
+.container {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+  }
+
+  .container form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .container form h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    /* font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5rem; */
+  }
+
+ 
+ .container form .form-text {
+    margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        width: 100%;
+    
+  }
+
+  .container form .submit {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #4285f4;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .container form .submit:hover {
+    background-color: #357ae8;
+  }
+
+  .container form p{
+    padding-top: 10%;
+    font-size: 1.3rem;
+    color:black;
+  }
+  
+  .container form p a{
+    color:blue;
+  }
+  
+  .container form p a:hover{
+    text-decoration: underline;
+  }
+  .footer{
+    background-color: white;
+  }
+  .footer .footer-container{
+    max-width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 2fr 0.7fr;
+    gap:3rem;
+  }
+  .footer .footer-container .box p,
+.footer .footer-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  color:blue;
+  align-items: center;
+  justify-content: center;
+  padding:1rem 0;
+}
+
+
+
+

@@ -1,4 +1,3 @@
-
 <?php
 include 'includes/cssjsInit.html';
 ?>
@@ -51,7 +50,9 @@ include 'includes/nav.php';
   </div>
 </div>
 
-
+<br>
+<br>
+<br>
 
 <?php
 include 'includes/footer.php';
