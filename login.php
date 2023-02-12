@@ -9,23 +9,20 @@
     if(!isset($_POST['email']) || ($_POST['email'] === '')){
       $validation['email'] = 'email field is required';
       echo 'userName needed';
-
-      //checking if password field is filled
-      if(!isset($_POST['password']) || empty($_POST['password'])){
-      $validation['password'] = 'Password field is required';
-      echo 'Password is required';
-    } else {
-        $password =  $_POST['password'];
-        echo "Welcome in ". $email;
-
-      // start DB validating from here
-
-
-
-
-    }
     } else {
         $email =  $_POST['email'];
+
+      //checking if password field is filled
+      if(!isset($_POST['password']) || ($_POST['password']) === ''){
+        $validation['password'] = 'Password field is required';
+        echo 'Password is required';
+      } else {
+          $password =  $_POST['password'];
+          echo "Welcome in ". $email;
+  
+        // USER HAS FILLED IN ALL THE FIELDS
+        
+      }
     }
 
   } else {
