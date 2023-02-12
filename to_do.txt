@@ -1,4 +1,4 @@
-A to do list
+A to do list project
 
 Resouces:
 https://keep.google.com/#home
@@ -38,4 +38,4 @@ So depending on these features, this is what I have in mind:
   the description and the due date.
 
 
-I  will orgnaize the working file dirctory, have a look at it 
+I  will orgnaize the working file dirctory, have a look at it

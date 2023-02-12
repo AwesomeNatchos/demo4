@@ -1,25 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Natcha wrote this!</h1>
-    <h2>Shiny Chaimae Queen is Here</h2>
-    <p> Shiny AS Always :)</p>
-    <form action="" method="post">
-      <input type="text" name="username" placeholder="Enter username" />
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Enter password"
-      />
-      <button type="sumbmit" name="sumbit">sumbit</button>
-      <a href="https://www.youtube.com/">Register</a>
+<?php
+include 'includes/head.php';
+?>
+
+
+
+
+<?php
+include 'includes/nav.php';
+?>
+<br>
+<br>
+
+<br>
+
+
+
+
+<div style="display: flex; flex-direction: row;">
+
+
+  <?php
+  include 'includes/aside.php';
+  ?>
+
+  <div style="width: 75%;">
+    <h2>Add Task</h2>
+    <form>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required><br>
+
+      <label for="due-date">Due Date:</label>
+      <input type="date" id="due-date" name="due-date" required><br>
+
+      <label for="description">Description:</label><br>
+      <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+
+      <input type="submit" value="Add Task">
     </form>
-  </body>
-</html>
+
+    <h2>All Tasks</h2>
+    <ul>
+      <li>Task 1</li>
+      <li>Task 2</li>
+      <li>Task 3</li>
+    </ul>
+  </div>
+</div>
+
+
+
+<?php
+include 'includes/footer.php';
+?>
