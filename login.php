@@ -28,11 +28,9 @@
   } else {
     echo 'something went wrong';
     echo 'No post request sendt';
-  }
-?>
+  }?>
 
-<html>
-  <head>
+
     <style>
       .container {
         display: flex;
@@ -83,6 +81,10 @@
       }
     </style>
   </head>
+
+<?php include 'includes/head.php'; ?>
+
+<?php include 'includes/nav.php'; ?>
   <body>
     <div class="container">
       <form action="login.php" method="POST">
@@ -96,5 +98,6 @@
 
     </div>
   </body>
+  <?php include 'includes/footer.php'; ?>
 </html>
 
