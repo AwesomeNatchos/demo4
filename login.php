@@ -43,7 +43,7 @@
         <div class="card" style="width: 25rem;">
       <div class="card-body">
             <!-- Form -->
-            <form class="form-example" action="" method="post">
+            <form class="form-example" action="login.php" method="post">
                 <h1>Log in</h1>
                 
                 <!-- Input fields -->

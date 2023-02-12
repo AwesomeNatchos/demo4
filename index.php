@@ -2,13 +2,8 @@
 <?php
 include 'includes/cssjsInit.html';
 ?>
-<?php
-include 'includes/head.php';
-?>
 
-<?php
-
-if(isset($_POST['addTask'])){
+<?php if(isset($_POST['addTask'])){
   $validation = [];
   $title = $_POST['title'];
   $dueDate = $_POST['dueDate'];
@@ -49,38 +44,47 @@ if(isset($_POST['addTask'])){
 ?>
 
 
-<?php
-include 'includes/nav.php';
-?>
-<br>
-<br>
 
-<br>
+<?php include 'includes/head.php';?>
+
+<?php include 'includes/nav.php'; ?>
 
 
+<!-- <?php
+ //include 'includes/aside.php';
+  ?> -->
 
-<div style="display: flex; flex-direction: row;">
+<div class="container h-100">
+<div class="row h-100 justify-content-center align-items-center">
 
+  <div class="card" style="width: 25rem;">
+    <div class="card-body">
+      
+      <h2>Add Task</h2>
+    <form class="form-example" action="index.php" method="POST">
+        
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" class="form-control username"><br>
+        
 
-  <?php
- include 'includes/aside.php';
-  ?>
+        <label for="due-date">Due Date:</label>
+        <input class="form-control username type="date" id="dueDate" name="dueDate"><br>
 
-  <div class="container" style="width: 75%;">
-    <h2>Add Task</h2>
-    <form action="index.php" method="POST">
-      <label for="title">Title:</label>
-      <input type="text" id="title" name="title" ><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" class="form-control username name="description" rows="4" cols="40"></textarea><br>
 
-      <label for="due-date">Due Date:</label>
-      <input type="date" id="dueDate" name="dueDate"><br>
+        <button type="submit" name="addTask" class="btn btn-primary btn-customized"> Add task </button>
+      </form>
+    </div>
+  </div>
+  
+  <br><br>
 
-      <label for="description">Description:</label><br>
-      <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+  <div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
 
-      <button type="submit" name="addTask"> Add task </button>
-    </form>
-
+  <div class="card" style="width: 25rem;">
+    <div class="card-body">
     <h2>All Tasks</h2>
     <ul>
       <li>Task 1</li>
@@ -88,7 +92,15 @@ include 'includes/nav.php';
       <li>Task 3</li>
     </ul>
   </div>
+  </div>
 
-<?php
-include 'includes/footer.php';
-?>
+  </div>
+  </div>
+
+
+</div>
+</div>
+
+</body>
+<?php include 'includes/footer.php'; ?>
+</html>
