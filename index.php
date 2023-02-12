@@ -59,15 +59,14 @@ include 'includes/nav.php';
 
 
 
-
 <div style="display: flex; flex-direction: row;">
 
 
   <?php
-  include 'includes/aside.php';
+ include 'includes/aside.php';
   ?>
 
-  <div style="width: 75%;">
+  <div class="container" style="width: 75%;">
     <h2>Add Task</h2>
     <form action="index.php" method="POST">
       <label for="title">Title:</label>
@@ -89,9 +88,6 @@ include 'includes/nav.php';
       <li>Task 3</li>
     </ul>
   </div>
-</div>
-
-
 
 <?php
 include 'includes/footer.php';

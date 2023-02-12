@@ -1,58 +1,53 @@
 <?php 
 if(isset($_POST['signUp'])){
   $validation = [];
-
   $firstName = $_POST['firstName'];
   $lastName = $_POST['lastName'];
   $email = $_POST['email'];
   $password = $_POST['password'];
 
-  //Checking if first name is filled
-  if(!isset($_POST['firstName']) || $_POST['firstName'] === ''){
-  $validation['firstName'] = 'First name field is required.';
-  echo 'Plase fill in first name';
-  } else {
-      $firstName = $_POST['firstName'];
-
-
-  //Checking if last name is filled
-    if(!isset($_POST['lastName']) || $_POST['lastName'] === ''){
-    $validation['lastName'] = 'Last name field is required.';
-    echo 'Please fill in last name';
+    //Checking if first name is filled
+    if(!isset($_POST['firstName']) || $_POST['firstName'] === ''){
+    $validation['firstName'] = 'First name field is required.';
+    echo 'Plase fill in first name';
     } else {
-        $lastName = $_POST['lastName'];
+        $firstName = $_POST['firstName'];
 
-      //Checking if email fiel is filled
-      if(!isset($_POST['email']) || ($_POST['email'] === '')){
-        $validation['email'] = 'email field is required';
-        echo 'email is needed';
-      } else {
-        $email = $_POST['email'];
 
-      //checking if password field is filled
-      if(!isset($_POST['password']) || empty($_POST['password'])){
-        $validation['password'] = 'Password field is required';
-        echo 'Password is required';
-      } else {
-          $password =  $_POST['password'];
+      //Checking if last name is filled
+        if(!isset($_POST['lastName']) || $_POST['lastName'] === ''){
+        $validation['lastName'] = 'Last name field is required.';
+        echo 'Please fill in last name';
+        } else {
+            $lastName = $_POST['lastName'];
 
-          
-        //  USER HAS FILLED IN ALL THE FIELDS
-        echo "Welcome ". $firstName . " " . $lastName;    
+          //Checking if email fiel is filled
+          if(!isset($_POST['email']) || ($_POST['email'] === '')){
+            $validation['email'] = 'email field is required';
+            echo 'email is needed';
+          } else {
+            $email = $_POST['email'];
 
+          //checking if password field is filled
+          if(!isset($_POST['password']) || empty($_POST['password'])){
+            $validation['password'] = 'Password field is required';
+            echo 'Password is required';
+          } else {
+              $password =  $_POST['password'];
+
+              
+            //  USER HAS FILLED IN ALL THE FIELDS
+            echo "Welcome ". $firstName . " " . $lastName;    
+
+        }
+      }  
     }
-  }  
-}
-
-}
-
+  }
 
 } else {
   echo 'Something went wrong';
-}
-?> 
-<html>
-  <head>
+}?> 
+
     <style>
       .container {
         display: flex;
@@ -103,8 +98,13 @@ if(isset($_POST['signUp'])){
         background-color: #357ae8;
       }
     </style>
-  </head>
-  <body>
+
+
+
+<?php include 'includes/head.php'; ?>
+
+<?php include 'includes/nav.php'; ?>
+
     <div class="container">
       <form action="signUp.php" method="POST">
         <h1>Sign Up</h1>
@@ -116,6 +116,7 @@ if(isset($_POST['signUp'])){
       </form>
     </div>
   </body>
+<?php include 'includes/footer.php'; ?>
 </html>
 
  

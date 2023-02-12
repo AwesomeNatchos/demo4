@@ -84,9 +84,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="http://localhost/demo4/index.php">
       <img src="pictures\todo_icon1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      Bootstrap
+      Home
     </a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -101,11 +101,13 @@
         </li>
       
       
-      <form class ="d-flex"class="nav justify-content-center" role="search">
+      <form class ="d-flex"  role="search">
         <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-</ul>
+
+      
+      </ul>
     </div>
   </div>
 </nav>
