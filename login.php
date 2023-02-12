@@ -1,3 +1,39 @@
+
+<?php
+  if(isset($_POST['logIn'])){
+    $validation = [];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+  
+    //checking if email field is filled
+    if(!isset($_POST['email']) || ($_POST['email'] === '')){
+      $validation['email'] = 'email field is required';
+      echo 'userName needed';
+
+      //checking if password field is filled
+      if(!isset($_POST['password']) || empty($_POST['password'])){
+      $validation['password'] = 'Password field is required';
+      echo 'Password is required';
+    } else {
+        $password =  $_POST['password'];
+        echo "Welcome in ". $email;
+
+      // start DB validating from here
+
+
+
+
+    }
+    } else {
+        $email =  $_POST['email'];
+    }
+
+  } else {
+    echo 'something went wrong';
+    echo 'No post request sendt';
+  }
+?>
+
 <html>
   <head>
     <style>
@@ -52,12 +88,16 @@
   </head>
   <body>
     <div class="container">
-      <form>
-        <h1>Login</h1>
-        <input type="text" placeholder="Email or Phone" required>
-        <input type="password" placeholder="Password" required>
-        <input type="submit" value="Sign in">
+      <form action="login.php" method="POST">
+        <h1>Login to your account</h1>
+        <input type="text" name="email" placeholder="Email" >
+        <input type="password" name="password" placeholder="Password" >
+        <button type="submit" name="logIn">Log in </button>
       </form>
+
+      <a href="signUp.php">Sign up for a new account</a>
+
     </div>
   </body>
 </html>
+
