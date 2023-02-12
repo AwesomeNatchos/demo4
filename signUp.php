@@ -40,9 +40,6 @@ if(isset($_POST['signUp'])){
         //  USER HAS FILLED IN ALL THE FIELDS
         echo "Welcome ". $firstName . " " . $lastName;    
 
-
-
-        
     }
   }  
 }
