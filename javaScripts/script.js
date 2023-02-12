@@ -1,14 +1,4 @@
-// //side bar opening
-// function openSidebar() {
-//     document.getElementsByClassName("sidebar")[0].style.width = "250px";
-//   }
 
-// //side bar closing with clicks
-//   document.addEventListener("click", function(event) {
-//     if (!event.target.closest(".sidebar")) {
-//       // Close the sidebar
-//     }
-//   });
 function openSidebar() {
     document.getElementsByClassName("sidebar")[0].style.width = "250px";
   }
@@ -24,5 +14,7 @@ function openSidebar() {
       $('.navbar-collapse').toggle();
     });
   });
+ 
+
   
   

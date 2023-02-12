@@ -1,4 +1,3 @@
-<!-- Include Bootstrap CSS and JavaScript -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -36,4 +35,21 @@
       </ul>
     </div>
   </div>
+  <!-- Toggle Button -->
+  <button class="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Menu -->
+  <aside class="menu">
+    <?php
+    include 'includes/aside.php';
+    ?>
+  </aside>
+
 </nav>
+<script>
+  $(".menu-toggle").click(function() {
+    $(".menu").toggle();
+  });
+</script>
