@@ -1,3 +1,41 @@
+<?php 
+if(isset($_POST['signUp'])){
+  $validation = [];
+
+  $firstName = $_POST['firstName'];
+  $lastName = $_POST['lastName'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+
+  
+  if(empty($email)){
+    $validation['email'] = 'Email field is required';
+  } else {
+      $password =  $_POST['email'];
+  }
+
+  if(empty($password)){
+    $validation['password'] = 'Password field is required';
+  } else {
+      $password =  $_POST['password'];
+  }
+
+  if(empty($firstName)){
+      $validation['firstName'] = 'First name field is required.';
+  } else {
+      $firstName = $_POST['firstName'];
+  }
+  
+  if(empty($lastName)){
+      $validation['lastName'] = 'Last name field is required.';
+  } else {
+      $lastName = $_POST['lastName'];
+  }
+
+  echo "Welcome ". $firstName . " " . $lastName;
+
+}
+?> 
 <html>
   <head>
     <style>
@@ -53,14 +91,16 @@
   </head>
   <body>
     <div class="container">
-      <form>
+      <form action="signUp.php" method="POST">
         <h1>Sign Up</h1>
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <input type="submit" value="Sign Up">
+        <input type="text" name="firstName" placeholder="First Name">
+        <input type="text" name="lastName" placeholder="Last Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password" >
+        <button type="submit" name="signUp">Sign up </button>
       </form>
     </div>
   </body>
 </html>
+
+ 
